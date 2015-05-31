@@ -1,0 +1,278 @@
+/** {
+  box-sizing: border-box;
+}*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+audio[controls], canvas, video { 
+  display: inline-block; 
+  *display: inline; 
+  *zoom: 1; }
+  
+body { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+  
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* END OF CSS RESET */
+
+/* Import Web Fonts */
+@font-face {
+  font-family: 'Open Sans';
+    src: url('fonts/OpenSans-Bold.ttf') format('truetype'),
+         url('fonts/OpenSans-Italic.tff') format('truetype');
+}
+
+body {
+  font: 1em/1.5 "Open Sans";
+  color: #2a2b2f;
+  background-color: rgb(239, 239, 239);
+}
+
+#wrapper {
+  max-width: 90%;
+  margin: auto;
+}
+
+#nav {
+  margin-bottom: 10px;
+  background-color: rgb(239, 239, 239);
+  z-index: 1000;
+  position: fixed;
+  width: 90%;
+  /*box-shadow: inset 1px black;
+  position: fixed;
+  top: 0px;
+  width: 90%;
+  z-index: 1000;
+  margin: auto;
+  box-shadow: inset 0px -2px 0px 0px rgba(0,0,0, 1);  */
+}
+
+/* Classes for hiding on scroll */
+.headroom {
+    transition: transform 200ms linear;
+    -webkit-transition: transform 200ms linear;
+}
+.headroom--pinned {
+    transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+}
+.headroom--unpinned {
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+}
+
+#logo {
+  float: left;
+  vertical-align: left;
+  margin-top: 15px;
+}
+
+#menu {
+  margin-top: 15px;
+  float: right;
+  vertical-align: right;
+}
+
+#welcome {
+  padding-top: 50px;
+}
+
+
+#header {
+  background: url("img/header-background.png") no-repeat;
+}
+
+#header p {
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  font-size: 0.7em;
+  text-transform: uppercase;
+  margin-left: 75px;
+  padding-top: 120px;
+}
+
+.images-banner {
+  width: 100%;
+  margin-bottom: -6px;
+}
+
+.images-banner img {
+    width: inherit;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-title {
+  margin-left: 75px;
+  max-width: 45%;
+  font-weight: extrabold;
+  font-size: 2.5em;
+  line-height: 1.2em;
+  margin-top: 50px;
+}
+
+.sub-title {
+  font-family: "Times New Roman";
+  color: #828282;
+  margin-top: 20px;
+  margin-left: 75px;
+  font-style: italic;
+  font-size: 0.7em;
+  max-width: 37%;
+}
+
+#video-link {
+  margin-top: 70px;
+  padding-bottom: 100px;
+}
+
+.largebox {
+  width: 50%;
+  padding-bottom: 50%; /* Height fix to make it equal the with */
+  color: #FFF;
+  margin: auto;
+  position: relative;
+  float: left; 
+  display: inline;
+}
+
+.right {
+  float: right;
+}
+
+.smallbox {
+  width: 25%;
+  padding-bottom: 25%; /* Height fix to make it equal the with */
+  padding-top: -240px;
+  color: #FFF;
+  margin: auto;
+  position: relative;
+  float: left;
+  display: inline;
+}
+
+
+.innerContent {
+  position: absolute;
+  width: 100.01%;
+  max-height: 100%;
+}
+
+.innerContent img {
+  max-width: inherit;
+  width: 100%;
+  height: 100%;
+
+}
+
+#whatsapp {
+  background-color: #74c04e;  
+  width: 33.33%;
+  height: 5em;
+  float: left;
+}
+
+#whatsapp p {
+  color: #2c2d31;
+  text-align: center;
+  font-size: 1.8em;
+}
+
+#snapchat {
+  background-color: #f7ec1f;  
+  width: 33.33%;
+  height: 5em;
+  float: left;
+}
+
+#snapchat p {
+  color: white;
+  text-align: center;
+  font-size: 1.8em;
+}
+
+#instagram {
+  background-color: #5380a5;  
+  width: 33.34%;
+  height: 5em;
+  float: left;
+}
+
+#instagram p {
+  color: white;
+  text-align: center;
+  font-size: 1.8em;
+}
+
+#footerbox1{
+  background-color: #3b5998;
+  width: 25%;
+  height: 2.5em;
+  float: left;
+}
+
+#footerbox2{
+  background-color: #00aced;
+  width: 25%;
+  height: 2.5em;
+  float: left;
+}
+
+#footerbox3{
+  background-color: #bb0000;
+  width: 25%;
+  height: 2.5em;
+  float: left;
+}
+
+#footerbox4{
+  background-color: #007bb6;
+  width: 25%;
+  height: 2.5em;
+  float: left;
+}
+
+/* Float Clearfix */
+
+.floatfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.clearing {
+  clear: both;
+}

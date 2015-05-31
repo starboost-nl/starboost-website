@@ -1,0 +1,178 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="js/scrollreveal.js"></script>
+		<script src="js/headroom.min.js"></script>
+		<script>
+			
+		</script>
+		<link rel="stylesheet" href="style.css"/>
+		<title>Starboost</title>
+	</head>
+	<body>
+
+		<!-- The wrapper that contains the entire site-->
+		<div id="wrapper">
+			<header id="nav" class="floatfix">
+
+				<!-- Left top container for logo -->
+				<div id="logo" class="floatfix">
+					<a href="index.html">
+						<img src="img/logo.png">
+					</a>
+				</div>
+
+				<!-- Right top container for menu -->
+				<div id="menu">
+					menu > =
+				</div>
+			</header>
+
+			<div id="header">
+
+				<!-- Container for welcome message -->
+				<div id="welcome">
+					<p>
+						Goedemiddag, welkom!
+					</p>
+				</div>
+
+				<!-- The main title -->
+				<h1 class="main-title">
+					Geweldige ervaringen maken unieke merken
+				</h1>
+
+				<h2 class="sub-title">
+					Door middel van creativiteit en strategie, zorgen wij voor ervaringen die helpen merken, bedrijven en personen op te vallen even als ergens voor te staan.
+				</h2>
+
+				<div id="video-link">
+					<a href="#"><img src="#">Bekijk onze video</a>
+				</div>
+			</div>
+			<!-- Top banner -->
+			<div data-sr class="images-banner">
+				<img src="img/imagebanner.png">
+			</div>
+			<div data-sr class="largebox">
+				<div class="innerContent">
+					<img src="img/topleft.png">
+				</div>
+			</div>
+
+			<div data-sr class="smallbox">
+				<div class="innerContent">
+					<img src="img/badtextiel.png">
+				</div>
+			</div>
+
+			<div data-sr class="smallbox">
+				<div class="innerContent">
+					<img src="img/coffee.png">
+				</div>
+			</div>
+
+			<div data-sr class="smallbox">
+				<div class="innerContent">
+					<img src="img/dude.png">
+				</div>
+			</div>
+
+			<div data-sr class="smallbox">
+				<div class="innerContent">
+					<img src="img/verhuizingen.png">
+				</div>
+			</div>		
+
+			<div data-sr class="smallbox">
+				<div class="innerContent">
+					<img src="img/speech.png">
+				</div>
+			</div>
+
+			<div data-sr class="smallbox">
+				<div class="innerContent">
+					<img src="img/coffee.png">
+				</div>
+			</div>
+
+			<div data-sr class="largebox right floatfix">
+				<div class="innerContent">
+					<img src="img/bottomright.png">
+				</div>
+			</div>
+
+			<div data-sr class="smallbox">
+				<div class="innerContent">
+					<img src="img/dude.png">
+				</div>
+			</div>
+
+			<div data-sr class="smallbox">
+				<div class="innerContent">
+					<img src="img/cutting.png">
+				</div>
+			</div>
+
+			<div data-sr id="footer">
+				<!-- Banner with text -->
+				<figcaption>
+					<img data-sr class="images-banner" src="img/footer-background.png">
+					<!--<caption>Beleven en 'samen' creatief te werk gaan.</caption>-->
+				</figcaption>
+
+				<!-- Whatsapp -->
+				<div data-sr id="whatsapp">
+					<p>Whatsapp</p>
+				</div>
+
+				<!-- Snapchat -->
+				<div data-sr id="snapchat">
+					<p>Snapchat</p>
+				</div>
+
+				<!-- Instagram -->
+				<div data-sr id="instagram">
+					<p>Instagram</p>
+				</div>
+
+				<!-- Bottom colors -->
+				<div data-sr id="footerbox1">
+				</div>
+
+				<div data-sr id="footerbox2">
+				</div>
+
+				<div data-sr id="footerbox3">
+				</div>
+
+				<div data-sr id="footerbox4">
+				</div>
+			</div>
+
+		</div>
+	<script>
+		// grab an element
+		var header = document.querySelector("#nav");
+		// construct an instance of Headroom, passing the element
+
+		 new Headroom(header, {
+        tolerance: {
+          down : 10,
+          up : 10
+        },
+        offset : 200,
+        classes: {
+          initial: "headroom",
+          pinned: "headroom--pinned",
+          unpinned: "headroom--unpinned"
+        }
+    }).init();
+
+		 window.sr = new scrollReveal();
+	</script>
+	</body>
+</html>
